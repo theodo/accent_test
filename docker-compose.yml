@@ -13,6 +13,9 @@ services:
         restart: on-failure
         env_file:
             - .env
+        environment:
+            - PHP_IDE_CONFIG=serverName=accent_test_docker
+            - XDEBUG_CONFIG=remote_host=docker.for.mac.localhost remote_port=9001
         volumes:
             - './:/var/www/app/current'
             - '../accent:/var/www/accent'
