@@ -28,6 +28,7 @@
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
+        "forge/accent-bundle": "*@dev",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/profiler-pack": "*",
@@ -78,5 +79,11 @@
             "allow-contrib": false,
             "require": "4.3.*"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../accent"
+        }
+    ]
 }
